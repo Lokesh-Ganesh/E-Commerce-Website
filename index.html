@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSWebWork</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>LSWebWork</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="#index">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="#index">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!--header-->
+    <div class="header" >
+        <div>
+            <h1>Level Up Your Style</h1>
+            <p>With Our Stunning Collections</p>
+            <button class="header-button">Show Now</button>
+        </div>
+
+        <div id="image" >
+            <img src="final-image (1).jpg" alt="Fahion Dress" title="Fashion Dress">
+        </div>
+    </div>
+    <!--service-->
+    <div class="service" id="index">
+        <div class="service-container-1">
+            <div>
+                <h2>We Provide Best</h2>
+                <h2>Customer Experience</h2>
+            </div>
+            <div>
+                <p>|| We Ensure That Our Customer Have The Best Shopping Experience</p>
+            </div>
+        </div>
+        <div class="service-container-2">
+            <div>
+                <i class="fa fa-check-circle" ></i>
+                <h4>Satisfaction Guarantee</h4>
+                <p>"Elevating your experience with our Satisfaction Guarantee: where quality meets assurance in every
+                    click and code."</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h4>New Arrival Everyday</h4>
+                <p>Step into a world of endless discovery as we unveil new arrivals every day, curated just for you.
+                </p>
+            </div>
+            <div>
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <h4>Fast and Free Shipping</h4>
+                <p>Experience the convenience of fast, free shipping - because waiting shouldn't delay your delight.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 style="padding: 20px;" class="newarrival">New Arrival</h2>
+        <div class="new-arrival">
+            <div class="new-arrival-container">
+                <img src="final-image (2).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image (3).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image (4).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image.jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 style="padding: 20px;" class="moswanted">Most Wanted</h2>
+        <div class="new-arrival">
+            <div class="new-arrival-container">
+                <img src="final-image (5).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image (6).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image (7).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="new-arrival-container">
+                <img src="final-image (9).jpg" alt="">
+                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <!--news-->
+    <div class="news">
+        <h2 style="margin: 10px;">Join Our News Letter</h2>
+        <p>Signup for our email news letter to get exclusive discounts and updates</p>
+        <div>
+            <input type="text" class="search">
+        </div>
+        <div>
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    
+    <!--footer-->
+    <div class="footer" >
+        <div class="footer-container">
+            <div class="footer-box-1">
+              <h2 class="headingtext">LSWebWorks</h2>
+              <p>LSWebWorks is your premier destination for fashion-forward dress styles, offering a curated selection that seamlessly blends elegance with modern trends. With a commitment to quality craftsmanship and impeccable design, our website caters to the discerning fashionista, providing a diverse range of dresses to suit every occasion and taste. </p>
+              <div class="footer-icon">
+                <i class="fa-brands fa-instagram" style="color:white;"></i>
+                <i class="fa-brands fa-twitter" style="color:white;"></i>
+                <i class="fa-brands fa-facebook" style="color:white;"></i>
+              </div>
+            </div>
+            <p>@ 2024 LSWebWorks.com </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

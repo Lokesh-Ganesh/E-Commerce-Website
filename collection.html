@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSWebWorks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>LSWebWorks</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!--product-section-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="products" id="products">
+            <div class="products-box">
+                <img src="download (2).jpeg" alt="">
+                <p>White Shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="images (6).jpeg" alt="">
+                <p>Black Shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="download (1).jpeg" alt="">
+                <p>White T-Shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="download.jpeg" alt="">
+                <p>Black T-Shirt</p>
+            </div>
+           
+            <div class="products-box">
+                <img src="final-image (12).jpg" alt="">
+                <p>Jeans Pant</p>
+            </div>
+            <div class="products-box">
+                <img src="final-image (20).jpg" alt="">
+                <p>Cotton Pant</p>
+            </div>
+            <div class="products-box">
+                <img src="final-image (15).jpg" alt="">
+                <p>Jeans Pant</p>
+            </div>
+            <div class="products-box">
+                <img src="final-image (19).jpg" alt="">
+                <p>Cotton Pant</p>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer" id="contactus">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">LSWebWorks</h2>
+                <p>LSWebWorks is your premier destination for fashion-forward dress styles, offering a curated selection
+                    that seamlessly blends elegance with modern trends. With a commitment to quality craftsmanship and
+                    impeccable design, our website caters to the discerning fashionista, providing a diverse range of
+                    dresses to suit every occasion and taste. </p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter" style="color:white;"></i>
+                    <i class="fa-brands fa-facebook" style="color:white;"></i>
+                </div>
+            </div>
+            <p>@ 2024 LSWebWorks.com </p>
+        </div>
+    </div>
+    <script src="collection.js"></script>
+</body>
+
+</html>

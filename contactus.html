@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSWebWorks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <h1>LSWebWorks</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contactus.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!--contactus-->
+    
+     <!--  <div class="contactUs">
+        <div class="information">
+            <h1>Contact Us</h1>
+            <h3>Name:</h3>
+            <input type="text">
+            <h3>Email:</h3>
+            <input type="text">
+            <h3>Message:</h3>
+            <input type="text" class="big">
+            <button>Submit</button>
+        </div>
+      </div> -->
+      <h1 style="text-align: center; margin: 10px;padding: 10px;
+      margin-bottom: 15px;margin-top: 10px;">Contact</h1>
+  
+      <form > 
+  
+          <label for="name" style="display: inline-block; margin-left: 300px;font-size: 1.5rem; padding: 5px;">Name</label>
+          <input type="text" id="name" name="name" style=" border-radius: 5px;background-color: rgb(227, 224, 224);
+          border: none;width: 500px;height: 50px;margin-left: 200px;padding: 10px;font-size: 1rem;outline:none;
+          " >
+          <br>
+          <label for="message" style="display: inline-block; margin-left: 300px;font-size: 1.5rem; padding: 5px;
+          position: relative;bottom:15px;">Message</label>
+          <textarea id="message" name="message"style=" border-radius: 5px;background-color: rgb(227, 224, 224);
+          border: none;width: 500px;height: 50px;margin-left: 160px;padding: 10px;font-size: 1rem;outline:none;
+          margin-top:20px;
+          " ></textarea>
+  <br>
+          <label for="priority" style="display: inline-block; margin-left: 300px;font-size: 1.5rem; padding: 5px;
+          margin-top: 10px;margin-bottom: 20px;">Priority</label>
+          <select id="priority" name="priority" style="margin-left: 190px;font-size: 1rem;
+          padding: 10px;">
+              <option value="1">Low</option>
+              <option style="padding:50px;margin:5px;" value="2" selected>Medium</option>
+              <option value="3">High</option>
+          </select>
+  
+          <br>
+              <label style=" margin-left:300px;font-size: 1.5rem; padding: 5px;margin-top: 25px;
+              ">Type</label>
+               <label style="margin-left: 210px;font-size: 1rem;"><input type="radio" name="hi">   Complaint</label>
+              <label style="margin-left: 50px;font-size: 1rem;"><input type="radio" name="hi" style="margin-right: 5px;">Suggestion</label>
+  
+          
+  <br>
+          <label style="margin-left: 300px;font-size: 1.2rem;">
+              <input type="checkbox" name="terms" style="margin-top: 40px;">
+              I agree to the terms and conditions
+          </label>
+  
+          <br>
+  
+          <button style="margin-left: 300px;margin-top: 20px;font-size: 1rem;padding: 5px;"id="send"
+          onclick="somethind()">Send</button>
+  
+      </form>
+    <!--footer-->
+    <div class="footer" id="contactus">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">LSWebWorks</h2>
+                <p>LSWebWorks is your premier destination for fashion-forward dress styles, offering a curated selection
+                    that seamlessly blends elegance with modern trends. With a commitment to quality craftsmanship and
+                    impeccable design, our website caters to the discerning fashionista, providing a diverse range of
+                    dresses to suit every occasion and taste. </p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-instagram" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter" style="color:white;"></i>
+                    <i class="fa-brands fa-facebook" style="color:white;"></i>
+                </div>
+            </div>
+            <p>@ 2024 LSWebWorks.com </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> 
